@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "c031d265-ac3b-4d76-a85d-cb2b20e32b16",
+		"name": "ATPW3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Especialidade",
+			"item": [
+				{
+					"name": "listarEspecialidade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/especialidade/listarEspecialidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"especialidade",
+								"listarEspecialidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarEspecialidadeID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/epecialidade/listarEspecialidade/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"epecialidade",
+								"listarEspecialidade",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrarEspecialidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_especialidade\": \"ortopedia\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/especialidade/cadastrarEspecialidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"especialidade",
+								"cadastrarEspecialidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterarEspecialidade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1\",\r\n    \"nome_especialidade\": \"cardiologista\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/especialidade/alterarEspecialidade",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"especialidade",
+								"alterarEspecialidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluirEspecialidade",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "listarMedico",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "listarMedicoID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrarMedico",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "alterarMedico",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "deletarMedico",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
